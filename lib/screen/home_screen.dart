@@ -6,16 +6,16 @@ import 'package:dogkart/screen/history_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({
     super.key,
   });
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _HomeScreenState extends State<HomeScreen> {
   late int _currentIndex;
   late List<Widget> pages;
   late String title;
@@ -41,23 +41,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: pages[_currentIndex],
       ),
       bottomNavigationBar: Theme(
-        data: ThemeData(
-          splashColor: Colors.transparent,
-          highlightColor: Colors.transparent,
-        ),
+        data: ThemeData(),
         child: Container(
-          color: const Color(0xFFF9F9F9),
-          height: MediaQuery.of(context).size.height * 0.1.h,
+          height: 60.h,
           child: Align(
             alignment: Alignment.bottomCenter,
             child: BottomNavigationBar(
-              backgroundColor: const Color(0x00ffffff),
-              type: BottomNavigationBarType.fixed,
-              showSelectedLabels: false,
-              showUnselectedLabels: false,
+              type: BottomNavigationBarType.shifting,
+              selectedItemColor: primaryHighlightColr,
+              unselectedItemColor: primaryColor,
               elevation: 0,
               items: <BottomNavigationBarItem>[
                 BottomNavigationBarItem(
+                    backgroundColor: const Color(0xFFF2E085),
                     icon: InkWell(
                       onTap: () {
                         setState(() {
@@ -85,8 +81,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
-                    label: ""),
+                    label: "Home"),
                 BottomNavigationBarItem(
+                    backgroundColor: const Color(0xFFF2E085),
                     icon: InkWell(
                       onTap: () {
                         setState(() {
@@ -114,8 +111,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
-                    label: ""),
+                    label: "History"),
                 BottomNavigationBarItem(
+                    backgroundColor: const Color(0xFFF2E085),
                     icon: InkWell(
                       onTap: () {
                         setState(() {
@@ -144,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
-                    label: ""),
+                    label: "Cart"),
               ],
               currentIndex: _currentIndex,
             ),

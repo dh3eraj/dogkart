@@ -1,5 +1,4 @@
-import 'dart:developer';
-import 'dart:math' hide log;
+import 'dart:math';
 
 import 'package:dogkart/bloc/random_dog/random_dog_cubit.dart';
 import 'package:dogkart/database/images_db.dart';
@@ -53,10 +52,7 @@ class _FetchScreenState extends State<FetchScreen> {
                 price = min + rnd.nextInt(max - min);
                 try {
                   _imagesDb.insertRow(imageSrc, price);
-                  log("Success : " + price.toString());
-                } catch (e) {
-                  log("failed");
-                }
+                } catch (e) {}
               },
               addedToCart: () {
                 isDisabled = true;
@@ -106,9 +102,13 @@ class _FetchScreenState extends State<FetchScreen> {
                     alignment: Alignment.topCenter,
                     child: Image.network(
                       imageSrc,
+                      filterQuality: FilterQuality.low,
                       width: double.maxFinite.w,
-                      errorBuilder: (context, error, stackTrace) => Image.network(
-                          "https://www.freepnglogos.com/uploads/dog-png/bow-wow-gourmet-dog-treats-are-healthy-natural-low-4.png"),
+                      errorBuilder: (context, error, stackTrace) =>
+                          Image.network(
+                        "https://www.freepnglogos.com/uploads/dog-png/bow-wow-gourmet-dog-treats-are-healthy-natural-low-4.png",
+                        filterQuality: FilterQuality.low,
+                      ),
                     ),
                   ),
                 ),

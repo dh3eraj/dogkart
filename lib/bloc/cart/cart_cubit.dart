@@ -17,10 +17,26 @@ class CartCubit extends Cubit<CartState> {
     try {
       emit(const CartState.loading());
       images = await _imagesDb.getAllItems();
-      log("message :" + images.toString());
       emit(CartState.loaded(images));
     } on Exception catch (_, e) {
       emit(CartState.error(e.toString()));
+      log(e.toString());
+    }
+  }
+
+  Future<void> getTotalPrice() async {
+    int total = 0;
+    List<DogImage> images = [];
+
+    try {
+      emit(const CartState.calculating());
+      images = await _imagesDb.getAllItems();
+      for (DogImage item in images) {
+        total = total + item.price;
+      }
+      emit(CartState.calculated(total));
+    } on Exception catch (_, e) {
+      emit(CartState.errorCalculating());
       log(e.toString());
     }
   }

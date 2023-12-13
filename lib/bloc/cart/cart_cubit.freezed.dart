@@ -22,6 +22,9 @@ mixin _$CartState {
     required TResult Function() loading,
     required TResult Function(List<DogImage> dogs) loaded,
     required TResult Function(String error) error,
+    required TResult Function() calculating,
+    required TResult Function(int total) calculated,
+    required TResult Function() errorCalculating,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,6 +33,9 @@ mixin _$CartState {
     TResult? Function()? loading,
     TResult? Function(List<DogImage> dogs)? loaded,
     TResult? Function(String error)? error,
+    TResult? Function()? calculating,
+    TResult? Function(int total)? calculated,
+    TResult? Function()? errorCalculating,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -38,6 +44,9 @@ mixin _$CartState {
     TResult Function()? loading,
     TResult Function(List<DogImage> dogs)? loaded,
     TResult Function(String error)? error,
+    TResult Function()? calculating,
+    TResult Function(int total)? calculated,
+    TResult Function()? errorCalculating,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,6 +56,9 @@ mixin _$CartState {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_Calculating value) calculating,
+    required TResult Function(_Calculated value) calculated,
+    required TResult Function(_ErrorCalculating value) errorCalculating,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,6 +67,9 @@ mixin _$CartState {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_Calculating value)? calculating,
+    TResult? Function(_Calculated value)? calculated,
+    TResult? Function(_ErrorCalculating value)? errorCalculating,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,6 +78,9 @@ mixin _$CartState {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_Calculating value)? calculating,
+    TResult Function(_Calculated value)? calculated,
+    TResult Function(_ErrorCalculating value)? errorCalculating,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -127,6 +145,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function() loading,
     required TResult Function(List<DogImage> dogs) loaded,
     required TResult Function(String error) error,
+    required TResult Function() calculating,
+    required TResult Function(int total) calculated,
+    required TResult Function() errorCalculating,
   }) {
     return initial();
   }
@@ -138,6 +159,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? loading,
     TResult? Function(List<DogImage> dogs)? loaded,
     TResult? Function(String error)? error,
+    TResult? Function()? calculating,
+    TResult? Function(int total)? calculated,
+    TResult? Function()? errorCalculating,
   }) {
     return initial?.call();
   }
@@ -149,6 +173,9 @@ class _$InitialImpl implements _Initial {
     TResult Function()? loading,
     TResult Function(List<DogImage> dogs)? loaded,
     TResult Function(String error)? error,
+    TResult Function()? calculating,
+    TResult Function(int total)? calculated,
+    TResult Function()? errorCalculating,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -164,6 +191,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_Calculating value) calculating,
+    required TResult Function(_Calculated value) calculated,
+    required TResult Function(_ErrorCalculating value) errorCalculating,
   }) {
     return initial(this);
   }
@@ -175,6 +205,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_Calculating value)? calculating,
+    TResult? Function(_Calculated value)? calculated,
+    TResult? Function(_ErrorCalculating value)? errorCalculating,
   }) {
     return initial?.call(this);
   }
@@ -186,6 +219,9 @@ class _$InitialImpl implements _Initial {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_Calculating value)? calculating,
+    TResult Function(_Calculated value)? calculated,
+    TResult Function(_ErrorCalculating value)? errorCalculating,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -241,6 +277,9 @@ class _$LoadingImpl implements _Loading {
     required TResult Function() loading,
     required TResult Function(List<DogImage> dogs) loaded,
     required TResult Function(String error) error,
+    required TResult Function() calculating,
+    required TResult Function(int total) calculated,
+    required TResult Function() errorCalculating,
   }) {
     return loading();
   }
@@ -252,6 +291,9 @@ class _$LoadingImpl implements _Loading {
     TResult? Function()? loading,
     TResult? Function(List<DogImage> dogs)? loaded,
     TResult? Function(String error)? error,
+    TResult? Function()? calculating,
+    TResult? Function(int total)? calculated,
+    TResult? Function()? errorCalculating,
   }) {
     return loading?.call();
   }
@@ -263,6 +305,9 @@ class _$LoadingImpl implements _Loading {
     TResult Function()? loading,
     TResult Function(List<DogImage> dogs)? loaded,
     TResult Function(String error)? error,
+    TResult Function()? calculating,
+    TResult Function(int total)? calculated,
+    TResult Function()? errorCalculating,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -278,6 +323,9 @@ class _$LoadingImpl implements _Loading {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_Calculating value) calculating,
+    required TResult Function(_Calculated value) calculated,
+    required TResult Function(_ErrorCalculating value) errorCalculating,
   }) {
     return loading(this);
   }
@@ -289,6 +337,9 @@ class _$LoadingImpl implements _Loading {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_Calculating value)? calculating,
+    TResult? Function(_Calculated value)? calculated,
+    TResult? Function(_ErrorCalculating value)? errorCalculating,
   }) {
     return loading?.call(this);
   }
@@ -300,6 +351,9 @@ class _$LoadingImpl implements _Loading {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_Calculating value)? calculating,
+    TResult Function(_Calculated value)? calculated,
+    TResult Function(_ErrorCalculating value)? errorCalculating,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -387,6 +441,9 @@ class _$LoadedImpl implements _Loaded {
     required TResult Function() loading,
     required TResult Function(List<DogImage> dogs) loaded,
     required TResult Function(String error) error,
+    required TResult Function() calculating,
+    required TResult Function(int total) calculated,
+    required TResult Function() errorCalculating,
   }) {
     return loaded(dogs);
   }
@@ -398,6 +455,9 @@ class _$LoadedImpl implements _Loaded {
     TResult? Function()? loading,
     TResult? Function(List<DogImage> dogs)? loaded,
     TResult? Function(String error)? error,
+    TResult? Function()? calculating,
+    TResult? Function(int total)? calculated,
+    TResult? Function()? errorCalculating,
   }) {
     return loaded?.call(dogs);
   }
@@ -409,6 +469,9 @@ class _$LoadedImpl implements _Loaded {
     TResult Function()? loading,
     TResult Function(List<DogImage> dogs)? loaded,
     TResult Function(String error)? error,
+    TResult Function()? calculating,
+    TResult Function(int total)? calculated,
+    TResult Function()? errorCalculating,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -424,6 +487,9 @@ class _$LoadedImpl implements _Loaded {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_Calculating value) calculating,
+    required TResult Function(_Calculated value) calculated,
+    required TResult Function(_ErrorCalculating value) errorCalculating,
   }) {
     return loaded(this);
   }
@@ -435,6 +501,9 @@ class _$LoadedImpl implements _Loaded {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_Calculating value)? calculating,
+    TResult? Function(_Calculated value)? calculated,
+    TResult? Function(_ErrorCalculating value)? errorCalculating,
   }) {
     return loaded?.call(this);
   }
@@ -446,6 +515,9 @@ class _$LoadedImpl implements _Loaded {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_Calculating value)? calculating,
+    TResult Function(_Calculated value)? calculated,
+    TResult Function(_ErrorCalculating value)? errorCalculating,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -532,6 +604,9 @@ class _$ErrorImpl implements _Error {
     required TResult Function() loading,
     required TResult Function(List<DogImage> dogs) loaded,
     required TResult Function(String error) error,
+    required TResult Function() calculating,
+    required TResult Function(int total) calculated,
+    required TResult Function() errorCalculating,
   }) {
     return error(this.error);
   }
@@ -543,6 +618,9 @@ class _$ErrorImpl implements _Error {
     TResult? Function()? loading,
     TResult? Function(List<DogImage> dogs)? loaded,
     TResult? Function(String error)? error,
+    TResult? Function()? calculating,
+    TResult? Function(int total)? calculated,
+    TResult? Function()? errorCalculating,
   }) {
     return error?.call(this.error);
   }
@@ -554,6 +632,9 @@ class _$ErrorImpl implements _Error {
     TResult Function()? loading,
     TResult Function(List<DogImage> dogs)? loaded,
     TResult Function(String error)? error,
+    TResult Function()? calculating,
+    TResult Function(int total)? calculated,
+    TResult Function()? errorCalculating,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -569,6 +650,9 @@ class _$ErrorImpl implements _Error {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_Calculating value) calculating,
+    required TResult Function(_Calculated value) calculated,
+    required TResult Function(_ErrorCalculating value) errorCalculating,
   }) {
     return error(this);
   }
@@ -580,6 +664,9 @@ class _$ErrorImpl implements _Error {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_Calculating value)? calculating,
+    TResult? Function(_Calculated value)? calculated,
+    TResult? Function(_ErrorCalculating value)? errorCalculating,
   }) {
     return error?.call(this);
   }
@@ -591,6 +678,9 @@ class _$ErrorImpl implements _Error {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_Calculating value)? calculating,
+    TResult Function(_Calculated value)? calculated,
+    TResult Function(_ErrorCalculating value)? errorCalculating,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -607,4 +697,431 @@ abstract class _Error implements CartState {
   @JsonKey(ignore: true)
   _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$CalculatingImplCopyWith<$Res> {
+  factory _$$CalculatingImplCopyWith(
+          _$CalculatingImpl value, $Res Function(_$CalculatingImpl) then) =
+      __$$CalculatingImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$CalculatingImplCopyWithImpl<$Res>
+    extends _$CartStateCopyWithImpl<$Res, _$CalculatingImpl>
+    implements _$$CalculatingImplCopyWith<$Res> {
+  __$$CalculatingImplCopyWithImpl(
+      _$CalculatingImpl _value, $Res Function(_$CalculatingImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$CalculatingImpl implements _Calculating {
+  const _$CalculatingImpl();
+
+  @override
+  String toString() {
+    return 'CartState.calculating()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$CalculatingImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(List<DogImage> dogs) loaded,
+    required TResult Function(String error) error,
+    required TResult Function() calculating,
+    required TResult Function(int total) calculated,
+    required TResult Function() errorCalculating,
+  }) {
+    return calculating();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<DogImage> dogs)? loaded,
+    TResult? Function(String error)? error,
+    TResult? Function()? calculating,
+    TResult? Function(int total)? calculated,
+    TResult? Function()? errorCalculating,
+  }) {
+    return calculating?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(List<DogImage> dogs)? loaded,
+    TResult Function(String error)? error,
+    TResult Function()? calculating,
+    TResult Function(int total)? calculated,
+    TResult Function()? errorCalculating,
+    required TResult orElse(),
+  }) {
+    if (calculating != null) {
+      return calculating();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
+    required TResult Function(_Calculating value) calculating,
+    required TResult Function(_Calculated value) calculated,
+    required TResult Function(_ErrorCalculating value) errorCalculating,
+  }) {
+    return calculating(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
+    TResult? Function(_Calculating value)? calculating,
+    TResult? Function(_Calculated value)? calculated,
+    TResult? Function(_ErrorCalculating value)? errorCalculating,
+  }) {
+    return calculating?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
+    TResult Function(_Calculating value)? calculating,
+    TResult Function(_Calculated value)? calculated,
+    TResult Function(_ErrorCalculating value)? errorCalculating,
+    required TResult orElse(),
+  }) {
+    if (calculating != null) {
+      return calculating(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Calculating implements CartState {
+  const factory _Calculating() = _$CalculatingImpl;
+}
+
+/// @nodoc
+abstract class _$$CalculatedImplCopyWith<$Res> {
+  factory _$$CalculatedImplCopyWith(
+          _$CalculatedImpl value, $Res Function(_$CalculatedImpl) then) =
+      __$$CalculatedImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({int total});
+}
+
+/// @nodoc
+class __$$CalculatedImplCopyWithImpl<$Res>
+    extends _$CartStateCopyWithImpl<$Res, _$CalculatedImpl>
+    implements _$$CalculatedImplCopyWith<$Res> {
+  __$$CalculatedImplCopyWithImpl(
+      _$CalculatedImpl _value, $Res Function(_$CalculatedImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? total = null,
+  }) {
+    return _then(_$CalculatedImpl(
+      null == total
+          ? _value.total
+          : total // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$CalculatedImpl implements _Calculated {
+  const _$CalculatedImpl(this.total);
+
+  @override
+  final int total;
+
+  @override
+  String toString() {
+    return 'CartState.calculated(total: $total)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$CalculatedImpl &&
+            (identical(other.total, total) || other.total == total));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, total);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$CalculatedImplCopyWith<_$CalculatedImpl> get copyWith =>
+      __$$CalculatedImplCopyWithImpl<_$CalculatedImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(List<DogImage> dogs) loaded,
+    required TResult Function(String error) error,
+    required TResult Function() calculating,
+    required TResult Function(int total) calculated,
+    required TResult Function() errorCalculating,
+  }) {
+    return calculated(total);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<DogImage> dogs)? loaded,
+    TResult? Function(String error)? error,
+    TResult? Function()? calculating,
+    TResult? Function(int total)? calculated,
+    TResult? Function()? errorCalculating,
+  }) {
+    return calculated?.call(total);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(List<DogImage> dogs)? loaded,
+    TResult Function(String error)? error,
+    TResult Function()? calculating,
+    TResult Function(int total)? calculated,
+    TResult Function()? errorCalculating,
+    required TResult orElse(),
+  }) {
+    if (calculated != null) {
+      return calculated(total);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
+    required TResult Function(_Calculating value) calculating,
+    required TResult Function(_Calculated value) calculated,
+    required TResult Function(_ErrorCalculating value) errorCalculating,
+  }) {
+    return calculated(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
+    TResult? Function(_Calculating value)? calculating,
+    TResult? Function(_Calculated value)? calculated,
+    TResult? Function(_ErrorCalculating value)? errorCalculating,
+  }) {
+    return calculated?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
+    TResult Function(_Calculating value)? calculating,
+    TResult Function(_Calculated value)? calculated,
+    TResult Function(_ErrorCalculating value)? errorCalculating,
+    required TResult orElse(),
+  }) {
+    if (calculated != null) {
+      return calculated(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Calculated implements CartState {
+  const factory _Calculated(final int total) = _$CalculatedImpl;
+
+  int get total;
+  @JsonKey(ignore: true)
+  _$$CalculatedImplCopyWith<_$CalculatedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ErrorCalculatingImplCopyWith<$Res> {
+  factory _$$ErrorCalculatingImplCopyWith(_$ErrorCalculatingImpl value,
+          $Res Function(_$ErrorCalculatingImpl) then) =
+      __$$ErrorCalculatingImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$ErrorCalculatingImplCopyWithImpl<$Res>
+    extends _$CartStateCopyWithImpl<$Res, _$ErrorCalculatingImpl>
+    implements _$$ErrorCalculatingImplCopyWith<$Res> {
+  __$$ErrorCalculatingImplCopyWithImpl(_$ErrorCalculatingImpl _value,
+      $Res Function(_$ErrorCalculatingImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$ErrorCalculatingImpl implements _ErrorCalculating {
+  const _$ErrorCalculatingImpl();
+
+  @override
+  String toString() {
+    return 'CartState.errorCalculating()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ErrorCalculatingImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(List<DogImage> dogs) loaded,
+    required TResult Function(String error) error,
+    required TResult Function() calculating,
+    required TResult Function(int total) calculated,
+    required TResult Function() errorCalculating,
+  }) {
+    return errorCalculating();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<DogImage> dogs)? loaded,
+    TResult? Function(String error)? error,
+    TResult? Function()? calculating,
+    TResult? Function(int total)? calculated,
+    TResult? Function()? errorCalculating,
+  }) {
+    return errorCalculating?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(List<DogImage> dogs)? loaded,
+    TResult Function(String error)? error,
+    TResult Function()? calculating,
+    TResult Function(int total)? calculated,
+    TResult Function()? errorCalculating,
+    required TResult orElse(),
+  }) {
+    if (errorCalculating != null) {
+      return errorCalculating();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
+    required TResult Function(_Calculating value) calculating,
+    required TResult Function(_Calculated value) calculated,
+    required TResult Function(_ErrorCalculating value) errorCalculating,
+  }) {
+    return errorCalculating(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
+    TResult? Function(_Calculating value)? calculating,
+    TResult? Function(_Calculated value)? calculated,
+    TResult? Function(_ErrorCalculating value)? errorCalculating,
+  }) {
+    return errorCalculating?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
+    TResult Function(_Calculating value)? calculating,
+    TResult Function(_Calculated value)? calculated,
+    TResult Function(_ErrorCalculating value)? errorCalculating,
+    required TResult orElse(),
+  }) {
+    if (errorCalculating != null) {
+      return errorCalculating(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _ErrorCalculating implements CartState {
+  const factory _ErrorCalculating() = _$ErrorCalculatingImpl;
 }
