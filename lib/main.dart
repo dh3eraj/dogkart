@@ -1,3 +1,4 @@
+import 'package:dogkart/bloc/history/history_cubit.dart';
 import 'package:dogkart/bloc/random_dog/random_dog_cubit.dart';
 import 'package:dogkart/network/api_repository.dart';
 import 'package:dogkart/res/color/app_colors.dart';
@@ -26,6 +27,9 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider<RandomDogCubit>(
           create: (BuildContext context) => RandomDogCubit(),
+        ),
+        BlocProvider<HistoryCubit>(
+          create: (BuildContext context) => HistoryCubit(),
         ),
       ],
       child: ScreenUtilInit(

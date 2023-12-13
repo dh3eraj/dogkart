@@ -22,6 +22,9 @@ mixin _$RandomDogState {
     required TResult Function() loading,
     required TResult Function(RandomDog randomDog) loaded,
     required TResult Function(String error) error,
+    required TResult Function() addingToCart,
+    required TResult Function() addedToCart,
+    required TResult Function() errorAddingToCart,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,6 +33,9 @@ mixin _$RandomDogState {
     TResult? Function()? loading,
     TResult? Function(RandomDog randomDog)? loaded,
     TResult? Function(String error)? error,
+    TResult? Function()? addingToCart,
+    TResult? Function()? addedToCart,
+    TResult? Function()? errorAddingToCart,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -38,6 +44,9 @@ mixin _$RandomDogState {
     TResult Function()? loading,
     TResult Function(RandomDog randomDog)? loaded,
     TResult Function(String error)? error,
+    TResult Function()? addingToCart,
+    TResult Function()? addedToCart,
+    TResult Function()? errorAddingToCart,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,6 +56,9 @@ mixin _$RandomDogState {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_AddingToCart value) addingToCart,
+    required TResult Function(_AddedToCart value) addedToCart,
+    required TResult Function(_ErrorAddingToCart value) errorAddingToCart,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,6 +67,9 @@ mixin _$RandomDogState {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_AddingToCart value)? addingToCart,
+    TResult? Function(_AddedToCart value)? addedToCart,
+    TResult? Function(_ErrorAddingToCart value)? errorAddingToCart,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,6 +78,9 @@ mixin _$RandomDogState {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_AddingToCart value)? addingToCart,
+    TResult Function(_AddedToCart value)? addedToCart,
+    TResult Function(_ErrorAddingToCart value)? errorAddingToCart,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -128,6 +146,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function() loading,
     required TResult Function(RandomDog randomDog) loaded,
     required TResult Function(String error) error,
+    required TResult Function() addingToCart,
+    required TResult Function() addedToCart,
+    required TResult Function() errorAddingToCart,
   }) {
     return initial();
   }
@@ -139,6 +160,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? loading,
     TResult? Function(RandomDog randomDog)? loaded,
     TResult? Function(String error)? error,
+    TResult? Function()? addingToCart,
+    TResult? Function()? addedToCart,
+    TResult? Function()? errorAddingToCart,
   }) {
     return initial?.call();
   }
@@ -150,6 +174,9 @@ class _$InitialImpl implements _Initial {
     TResult Function()? loading,
     TResult Function(RandomDog randomDog)? loaded,
     TResult Function(String error)? error,
+    TResult Function()? addingToCart,
+    TResult Function()? addedToCart,
+    TResult Function()? errorAddingToCart,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -165,6 +192,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_AddingToCart value) addingToCart,
+    required TResult Function(_AddedToCart value) addedToCart,
+    required TResult Function(_ErrorAddingToCart value) errorAddingToCart,
   }) {
     return initial(this);
   }
@@ -176,6 +206,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_AddingToCart value)? addingToCart,
+    TResult? Function(_AddedToCart value)? addedToCart,
+    TResult? Function(_ErrorAddingToCart value)? errorAddingToCart,
   }) {
     return initial?.call(this);
   }
@@ -187,6 +220,9 @@ class _$InitialImpl implements _Initial {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_AddingToCart value)? addingToCart,
+    TResult Function(_AddedToCart value)? addedToCart,
+    TResult Function(_ErrorAddingToCart value)? errorAddingToCart,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -242,6 +278,9 @@ class _$LoadingImpl implements _Loading {
     required TResult Function() loading,
     required TResult Function(RandomDog randomDog) loaded,
     required TResult Function(String error) error,
+    required TResult Function() addingToCart,
+    required TResult Function() addedToCart,
+    required TResult Function() errorAddingToCart,
   }) {
     return loading();
   }
@@ -253,6 +292,9 @@ class _$LoadingImpl implements _Loading {
     TResult? Function()? loading,
     TResult? Function(RandomDog randomDog)? loaded,
     TResult? Function(String error)? error,
+    TResult? Function()? addingToCart,
+    TResult? Function()? addedToCart,
+    TResult? Function()? errorAddingToCart,
   }) {
     return loading?.call();
   }
@@ -264,6 +306,9 @@ class _$LoadingImpl implements _Loading {
     TResult Function()? loading,
     TResult Function(RandomDog randomDog)? loaded,
     TResult Function(String error)? error,
+    TResult Function()? addingToCart,
+    TResult Function()? addedToCart,
+    TResult Function()? errorAddingToCart,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -279,6 +324,9 @@ class _$LoadingImpl implements _Loading {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_AddingToCart value) addingToCart,
+    required TResult Function(_AddedToCart value) addedToCart,
+    required TResult Function(_ErrorAddingToCart value) errorAddingToCart,
   }) {
     return loading(this);
   }
@@ -290,6 +338,9 @@ class _$LoadingImpl implements _Loading {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_AddingToCart value)? addingToCart,
+    TResult? Function(_AddedToCart value)? addedToCart,
+    TResult? Function(_ErrorAddingToCart value)? errorAddingToCart,
   }) {
     return loading?.call(this);
   }
@@ -301,6 +352,9 @@ class _$LoadingImpl implements _Loading {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_AddingToCart value)? addingToCart,
+    TResult Function(_AddedToCart value)? addedToCart,
+    TResult Function(_ErrorAddingToCart value)? errorAddingToCart,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -393,6 +447,9 @@ class _$LoadedImpl implements _Loaded {
     required TResult Function() loading,
     required TResult Function(RandomDog randomDog) loaded,
     required TResult Function(String error) error,
+    required TResult Function() addingToCart,
+    required TResult Function() addedToCart,
+    required TResult Function() errorAddingToCart,
   }) {
     return loaded(randomDog);
   }
@@ -404,6 +461,9 @@ class _$LoadedImpl implements _Loaded {
     TResult? Function()? loading,
     TResult? Function(RandomDog randomDog)? loaded,
     TResult? Function(String error)? error,
+    TResult? Function()? addingToCart,
+    TResult? Function()? addedToCart,
+    TResult? Function()? errorAddingToCart,
   }) {
     return loaded?.call(randomDog);
   }
@@ -415,6 +475,9 @@ class _$LoadedImpl implements _Loaded {
     TResult Function()? loading,
     TResult Function(RandomDog randomDog)? loaded,
     TResult Function(String error)? error,
+    TResult Function()? addingToCart,
+    TResult Function()? addedToCart,
+    TResult Function()? errorAddingToCart,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -430,6 +493,9 @@ class _$LoadedImpl implements _Loaded {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_AddingToCart value) addingToCart,
+    required TResult Function(_AddedToCart value) addedToCart,
+    required TResult Function(_ErrorAddingToCart value) errorAddingToCart,
   }) {
     return loaded(this);
   }
@@ -441,6 +507,9 @@ class _$LoadedImpl implements _Loaded {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_AddingToCart value)? addingToCart,
+    TResult? Function(_AddedToCart value)? addedToCart,
+    TResult? Function(_ErrorAddingToCart value)? errorAddingToCart,
   }) {
     return loaded?.call(this);
   }
@@ -452,6 +521,9 @@ class _$LoadedImpl implements _Loaded {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_AddingToCart value)? addingToCart,
+    TResult Function(_AddedToCart value)? addedToCart,
+    TResult Function(_ErrorAddingToCart value)? errorAddingToCart,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -538,6 +610,9 @@ class _$ErrorImpl implements _Error {
     required TResult Function() loading,
     required TResult Function(RandomDog randomDog) loaded,
     required TResult Function(String error) error,
+    required TResult Function() addingToCart,
+    required TResult Function() addedToCart,
+    required TResult Function() errorAddingToCart,
   }) {
     return error(this.error);
   }
@@ -549,6 +624,9 @@ class _$ErrorImpl implements _Error {
     TResult? Function()? loading,
     TResult? Function(RandomDog randomDog)? loaded,
     TResult? Function(String error)? error,
+    TResult? Function()? addingToCart,
+    TResult? Function()? addedToCart,
+    TResult? Function()? errorAddingToCart,
   }) {
     return error?.call(this.error);
   }
@@ -560,6 +638,9 @@ class _$ErrorImpl implements _Error {
     TResult Function()? loading,
     TResult Function(RandomDog randomDog)? loaded,
     TResult Function(String error)? error,
+    TResult Function()? addingToCart,
+    TResult Function()? addedToCart,
+    TResult Function()? errorAddingToCart,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -575,6 +656,9 @@ class _$ErrorImpl implements _Error {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_AddingToCart value) addingToCart,
+    required TResult Function(_AddedToCart value) addedToCart,
+    required TResult Function(_ErrorAddingToCart value) errorAddingToCart,
   }) {
     return error(this);
   }
@@ -586,6 +670,9 @@ class _$ErrorImpl implements _Error {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_AddingToCart value)? addingToCart,
+    TResult? Function(_AddedToCart value)? addedToCart,
+    TResult? Function(_ErrorAddingToCart value)? errorAddingToCart,
   }) {
     return error?.call(this);
   }
@@ -597,6 +684,9 @@ class _$ErrorImpl implements _Error {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_AddingToCart value)? addingToCart,
+    TResult Function(_AddedToCart value)? addedToCart,
+    TResult Function(_ErrorAddingToCart value)? errorAddingToCart,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -613,4 +703,400 @@ abstract class _Error implements RandomDogState {
   @JsonKey(ignore: true)
   _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$AddingToCartImplCopyWith<$Res> {
+  factory _$$AddingToCartImplCopyWith(
+          _$AddingToCartImpl value, $Res Function(_$AddingToCartImpl) then) =
+      __$$AddingToCartImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$AddingToCartImplCopyWithImpl<$Res>
+    extends _$RandomDogStateCopyWithImpl<$Res, _$AddingToCartImpl>
+    implements _$$AddingToCartImplCopyWith<$Res> {
+  __$$AddingToCartImplCopyWithImpl(
+      _$AddingToCartImpl _value, $Res Function(_$AddingToCartImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$AddingToCartImpl implements _AddingToCart {
+  const _$AddingToCartImpl();
+
+  @override
+  String toString() {
+    return 'RandomDogState.addingToCart()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$AddingToCartImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(RandomDog randomDog) loaded,
+    required TResult Function(String error) error,
+    required TResult Function() addingToCart,
+    required TResult Function() addedToCart,
+    required TResult Function() errorAddingToCart,
+  }) {
+    return addingToCart();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(RandomDog randomDog)? loaded,
+    TResult? Function(String error)? error,
+    TResult? Function()? addingToCart,
+    TResult? Function()? addedToCart,
+    TResult? Function()? errorAddingToCart,
+  }) {
+    return addingToCart?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(RandomDog randomDog)? loaded,
+    TResult Function(String error)? error,
+    TResult Function()? addingToCart,
+    TResult Function()? addedToCart,
+    TResult Function()? errorAddingToCart,
+    required TResult orElse(),
+  }) {
+    if (addingToCart != null) {
+      return addingToCart();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
+    required TResult Function(_AddingToCart value) addingToCart,
+    required TResult Function(_AddedToCart value) addedToCart,
+    required TResult Function(_ErrorAddingToCart value) errorAddingToCart,
+  }) {
+    return addingToCart(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
+    TResult? Function(_AddingToCart value)? addingToCart,
+    TResult? Function(_AddedToCart value)? addedToCart,
+    TResult? Function(_ErrorAddingToCart value)? errorAddingToCart,
+  }) {
+    return addingToCart?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
+    TResult Function(_AddingToCart value)? addingToCart,
+    TResult Function(_AddedToCart value)? addedToCart,
+    TResult Function(_ErrorAddingToCart value)? errorAddingToCart,
+    required TResult orElse(),
+  }) {
+    if (addingToCart != null) {
+      return addingToCart(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AddingToCart implements RandomDogState {
+  const factory _AddingToCart() = _$AddingToCartImpl;
+}
+
+/// @nodoc
+abstract class _$$AddedToCartImplCopyWith<$Res> {
+  factory _$$AddedToCartImplCopyWith(
+          _$AddedToCartImpl value, $Res Function(_$AddedToCartImpl) then) =
+      __$$AddedToCartImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$AddedToCartImplCopyWithImpl<$Res>
+    extends _$RandomDogStateCopyWithImpl<$Res, _$AddedToCartImpl>
+    implements _$$AddedToCartImplCopyWith<$Res> {
+  __$$AddedToCartImplCopyWithImpl(
+      _$AddedToCartImpl _value, $Res Function(_$AddedToCartImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$AddedToCartImpl implements _AddedToCart {
+  const _$AddedToCartImpl();
+
+  @override
+  String toString() {
+    return 'RandomDogState.addedToCart()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$AddedToCartImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(RandomDog randomDog) loaded,
+    required TResult Function(String error) error,
+    required TResult Function() addingToCart,
+    required TResult Function() addedToCart,
+    required TResult Function() errorAddingToCart,
+  }) {
+    return addedToCart();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(RandomDog randomDog)? loaded,
+    TResult? Function(String error)? error,
+    TResult? Function()? addingToCart,
+    TResult? Function()? addedToCart,
+    TResult? Function()? errorAddingToCart,
+  }) {
+    return addedToCart?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(RandomDog randomDog)? loaded,
+    TResult Function(String error)? error,
+    TResult Function()? addingToCart,
+    TResult Function()? addedToCart,
+    TResult Function()? errorAddingToCart,
+    required TResult orElse(),
+  }) {
+    if (addedToCart != null) {
+      return addedToCart();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
+    required TResult Function(_AddingToCart value) addingToCart,
+    required TResult Function(_AddedToCart value) addedToCart,
+    required TResult Function(_ErrorAddingToCart value) errorAddingToCart,
+  }) {
+    return addedToCart(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
+    TResult? Function(_AddingToCart value)? addingToCart,
+    TResult? Function(_AddedToCart value)? addedToCart,
+    TResult? Function(_ErrorAddingToCart value)? errorAddingToCart,
+  }) {
+    return addedToCart?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
+    TResult Function(_AddingToCart value)? addingToCart,
+    TResult Function(_AddedToCart value)? addedToCart,
+    TResult Function(_ErrorAddingToCart value)? errorAddingToCart,
+    required TResult orElse(),
+  }) {
+    if (addedToCart != null) {
+      return addedToCart(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AddedToCart implements RandomDogState {
+  const factory _AddedToCart() = _$AddedToCartImpl;
+}
+
+/// @nodoc
+abstract class _$$ErrorAddingToCartImplCopyWith<$Res> {
+  factory _$$ErrorAddingToCartImplCopyWith(_$ErrorAddingToCartImpl value,
+          $Res Function(_$ErrorAddingToCartImpl) then) =
+      __$$ErrorAddingToCartImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$ErrorAddingToCartImplCopyWithImpl<$Res>
+    extends _$RandomDogStateCopyWithImpl<$Res, _$ErrorAddingToCartImpl>
+    implements _$$ErrorAddingToCartImplCopyWith<$Res> {
+  __$$ErrorAddingToCartImplCopyWithImpl(_$ErrorAddingToCartImpl _value,
+      $Res Function(_$ErrorAddingToCartImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$ErrorAddingToCartImpl implements _ErrorAddingToCart {
+  const _$ErrorAddingToCartImpl();
+
+  @override
+  String toString() {
+    return 'RandomDogState.errorAddingToCart()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ErrorAddingToCartImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(RandomDog randomDog) loaded,
+    required TResult Function(String error) error,
+    required TResult Function() addingToCart,
+    required TResult Function() addedToCart,
+    required TResult Function() errorAddingToCart,
+  }) {
+    return errorAddingToCart();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(RandomDog randomDog)? loaded,
+    TResult? Function(String error)? error,
+    TResult? Function()? addingToCart,
+    TResult? Function()? addedToCart,
+    TResult? Function()? errorAddingToCart,
+  }) {
+    return errorAddingToCart?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(RandomDog randomDog)? loaded,
+    TResult Function(String error)? error,
+    TResult Function()? addingToCart,
+    TResult Function()? addedToCart,
+    TResult Function()? errorAddingToCart,
+    required TResult orElse(),
+  }) {
+    if (errorAddingToCart != null) {
+      return errorAddingToCart();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
+    required TResult Function(_AddingToCart value) addingToCart,
+    required TResult Function(_AddedToCart value) addedToCart,
+    required TResult Function(_ErrorAddingToCart value) errorAddingToCart,
+  }) {
+    return errorAddingToCart(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
+    TResult? Function(_AddingToCart value)? addingToCart,
+    TResult? Function(_AddedToCart value)? addedToCart,
+    TResult? Function(_ErrorAddingToCart value)? errorAddingToCart,
+  }) {
+    return errorAddingToCart?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
+    TResult Function(_AddingToCart value)? addingToCart,
+    TResult Function(_AddedToCart value)? addedToCart,
+    TResult Function(_ErrorAddingToCart value)? errorAddingToCart,
+    required TResult orElse(),
+  }) {
+    if (errorAddingToCart != null) {
+      return errorAddingToCart(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _ErrorAddingToCart implements RandomDogState {
+  const factory _ErrorAddingToCart() = _$ErrorAddingToCartImpl;
 }

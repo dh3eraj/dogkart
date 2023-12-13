@@ -18,9 +18,11 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   late int _currentIndex;
   late List<Widget> pages;
+  late String title;
   @override
   void initState() {
     _currentIndex = 0;
+    title = AppStrings.home;
     pages = [FetchScreen(), HistoryScreen(), CartScreen()];
     super.initState();
   }
@@ -31,11 +33,13 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(
-          AppStrings.appName,
+          title,
           style: TextStyle(color: primaryTextColor, fontSize: 24.sp),
         ),
       ),
-      body: pages[_currentIndex],
+      body: Center(
+        child: pages[_currentIndex],
+      ),
       bottomNavigationBar: Theme(
         data: ThemeData(
           splashColor: Colors.transparent,
@@ -58,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         setState(() {
                           _currentIndex = 0;
+                          title = AppStrings.home;
                         });
                       },
                       child: Container(
@@ -86,6 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         setState(() {
                           _currentIndex = 1;
+                          title = AppStrings.history;
                         });
                       },
                       child: Container(
@@ -113,6 +119,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     icon: InkWell(
                       onTap: () {
                         setState(() {
+                          title = AppStrings.cart;
+
                           _currentIndex = 2;
                         });
                       },
