@@ -408,6 +408,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.5.0"
+  mcp:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: master
+      resolved-ref: bf469f0c2060fd8006829e02fcd6ee5fe560c41f
+      url: "git@github.com:dh3eraj/mcp.git"
+    source: git
+    version: "0.0.1"
   meta:
     dependency: transitive
     description:
